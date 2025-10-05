@@ -54,7 +54,7 @@ public class SessionManager {
     }
 
     public boolean validateUserInput(String userInput){
-        return userInput.matches("[а-яА-Я]");
+        return userInput.matches("[а-яА-ЯёЁ]");
     }
 }
 
