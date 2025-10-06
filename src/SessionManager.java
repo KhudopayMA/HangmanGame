@@ -19,7 +19,7 @@ public class SessionManager {
             boolean validationError = false;
             while (true) {
                 if (numberOfMistakes < 6){
-                    HangmanDrawer.drawHangman(numberOfMistakes);
+                    Drawer.draw(numberOfMistakes);
                     System.out.println("Number of errors: " + numberOfMistakes);
                     System.out.println("Guessed letters: " + hiddenWord.getAlreadyGuessedLetters());
                     System.out.println("Hidden word: " + hiddenWord.getGuessedLetters());
@@ -42,7 +42,7 @@ public class SessionManager {
                         validationError = true;
                     }
                 } else {
-                    HangmanDrawer.drawHangman(numberOfMistakes);
+                    Drawer.draw(numberOfMistakes);
                     System.out.println("You lost.");
                     System.out.println("The hidden word is " + hiddenWord.getHiddenWord());
                     break;

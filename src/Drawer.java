@@ -1,75 +1,61 @@
-public class HangmanDrawer {
-
-    public static void drawHangman(int mistakes) {
-        switch (mistakes) {
-            case 0 :
-                System.out.println("""
+public class Drawer {
+    private static final String[] pictures = {
+                """
                     ┌─────
                     │    │
                     │
                     │
                     │
                     │
-                    └─────""");
-                break;
-            case 1:
-                System.out.println("""
+                    └─────""",
+                """
                     ┌─────
                     │    │
                     │    O
                     │
                     │
                     │
-                    └─────""");
-                break;
-            case 2:
-                System.out.println("""
+                    └─────""",
+                """
                     ┌─────
                     │    │
                     │    O
                     │    |
                     │
                     │
-                    └─────""");
-                break;
-            case 3:
-                System.out.println("""
+                    └─────""",
+                """
                     ┌─────
                     │    │
                     │    O
                     │   /|
                     │
                     │
-                    └─────""");
-                break;
-            case 4:
-                System.out.println("""
+                    └─────""",
+        """
                     ┌─────
                     │    │
                     │    O
                     │   /|\\
                     │
                     │
-                    └─────""");
-                break;
-            case 5:
-                System.out.println("""
+                    └─────""",
+        """
                     ┌─────
                     │    │
                     │    O
                     │   /|\\
                     │   /
-                    └─────""");
-                break;
-            case 6:
-                System.out.println("""
+                    └─────""",
+        """
                     ┌─────
                     │    │
                     │    O
                     │   /|\\
                     │   / \\
-                    └─────""");
-                break;
-        }
+                    └─────"""};
+
+    public static void draw(int mistake){
+        System.out.println(pictures[mistake]);
     }
 }
