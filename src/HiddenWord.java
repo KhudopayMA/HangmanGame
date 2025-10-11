@@ -10,7 +10,7 @@ public class HiddenWord {
     private final Set<Character> alreadyGuessedLetters;
 
     public HiddenWord() throws FileNotFoundException {
-        this.hiddenWord = FileReader.getWordFromFile();
+        this.hiddenWord = Dictionary.getRandomWord();
         this.guessedLetters = new ArrayList<>(this.hiddenWord.length());
         for (int index = 0; index < this.hiddenWord.length(); index++) {
             guessedLetters.add('_');

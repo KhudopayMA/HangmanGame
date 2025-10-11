@@ -5,6 +5,7 @@ public class GameManager {
     public static void startGame(){
         while (true){
             Scanner scanner = new Scanner(System.in);
+            Dictionary.createDictionaryFromFile();
             System.out.print("""
                     Please enter your choice:
                    
